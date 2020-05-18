@@ -4,7 +4,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'flazz/vim-colorschemes'
-Plug 'Shougo/echodoc.vim'
 call plug#end()
 
 syntax on
@@ -24,6 +23,10 @@ set nowritebackup
 " Better display for messages
 set cmdheight=5
 
+" To use a custom highlight for the popup window,
+" " change Pmenu to your highlight group
+" highlight link EchoDocPopup Pmenu
+
 " You will have bad experience for diagnostic messages when it's default 4000.
 set updatetime=300
 
@@ -36,8 +39,8 @@ set signcolumn=yes
 " show line numbers"
 set number
 
-"COC Customization"
-let g:coc_global_extensions = ['coc-cmake', 'coc-clangd', 'coc-snippets']
+"====== coc.nvim ======"
+let g:coc_global_extensions = ['coc-cmake', 'coc-clangd']
 
 " Use tab for trigger completion with characters ahead and navigate."
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -54,6 +57,9 @@ endfunction
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
+
+
+autocmd CursorHoldI,CursorMovedI * silent! call CocActionAsync('showSignatureHelp')
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.

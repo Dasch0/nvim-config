@@ -4,7 +4,11 @@
   "diagnostic.messageTarget": "echo",
   "coc.preferences.hoverTarget": "preview",
   "coc.preferences.previewAutoClose": true,
-  "suggest.echodocSupport": true,
-  "signature.target": "echo",
-  "suggest.maxCompleteItemCount": 12 
+  "signature.target": "float",
+  "signature.floatMaxWidth": 400,
+  "signature.maxWindowHeight": 20,
+  "coc.preferences.enableFloatHighlight": true,
+  "suggest.maxCompleteItemCount": 12,
+  "suggest.maxPreviewWidth": 40,
+  "suggest.labelMaxLength": 40
 }
