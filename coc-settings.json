@@ -1,0 +1,10 @@
+{
+  "clangd.semanticHighlighting": true,
+  "suggest.floatEnable": true,
+  "diagnostic.messageTarget": "echo",
+  "coc.preferences.hoverTarget": "preview",
+  "coc.preferences.previewAutoClose": true,
+  "suggest.echodocSupport": true,
+  "signature.target": "echo",
+  "suggest.maxCompleteItemCount": 12 
+}
