@@ -10,5 +10,8 @@
   "coc.preferences.enableFloatHighlight": true,
   "suggest.maxCompleteItemCount": 12,
   "suggest.maxPreviewWidth": 40,
-  "suggest.labelMaxLength": 40
+  "suggest.labelMaxLength": 40,
+  "rust-analyzer.diagnostics.disabled": [
+    "macro-error"
+  ]
 }

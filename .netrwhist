@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/das/git/dialogue_tree'
+let g:netrw_dirhist_2='/home/das/git/nenbody/src'
+let g:netrw_dirhist_1='/home/das/git/nenbody'
+let g:netrw_dirhist_0='/home/das/git'
+let g:netrw_dirhist_9='/home/das/git/arbor'
+let g:netrw_dirhist_8='/home/das/git'
+let g:netrw_dirhist_7='/home/das/git/arbor'
+let g:netrw_dirhist_6='/home/das/git/arbor/src'
+let g:netrw_dirhist_5='/home/das/git/nenbody/src'
+let g:netrw_dirhist_4='/home/das/git/nenbody'
